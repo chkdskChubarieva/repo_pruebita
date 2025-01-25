@@ -14,7 +14,7 @@ const Header = ({ toggleSidebar }) => {
             </div>
           </div>
 
-          <div className="rounded bg-[#F5C9C7] px-3 py-0">
+          <div className="rounded bg-[#F5C9C7] px-3 py-1">
               <img className="w-8 sm:hidden" src={logo} alt="" />
               <img
                 className="hidden w-28 sm:block"
