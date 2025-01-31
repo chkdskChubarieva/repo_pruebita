@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "NunitoSans";
   src: url("./assets/fonts/NunitoSans_10pt_SemiCondensed-ExtraLight.ttf")

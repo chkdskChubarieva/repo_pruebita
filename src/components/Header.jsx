@@ -1,34 +1,33 @@
 /* eslint-disable react/prop-types */
-import { useLocation } from "react-router-dom";
 import logo from "../assets/img/antojitos.png";
+import BotonNavbar from "./BotonNavbar";
 
-const Header = ({ toggleSidebar }) => {
-  const location = useLocation(); // Obtenemos la ruta actual
+const Header = ({ botones = [] }) => {
 
   return (
-    <>
-      <header id="inicio" className="fixed top-0 z-20 h-20 w-full">
-        <div className="fila-1 flex h-20 items-center justify-center px-4">
-          <div className="flex items-center gap-2 flex-1">
-            <div className="rounded bg-white px-3 py-1">
-            </div>
-          </div>
+    <header
+      id="inicio"
+      className="fixed top-0 z-20 w-full bg-[#F5C9C7] h-20 flex items-center justify-between px-6"
 
-          <div className="rounded bg-[#F5C9C7] px-3 py-1">
-              <img className="w-8 sm:hidden" src={logo} alt="" />
-              <img
-                className="hidden w-28 sm:block"
-                src={logo}
-                alt="logo-umss"
-              />
-            </div>
+    >
+      {/* Logo */}
+      <div className="flex items-center">
+        <img className="h-12 sm:h-16" src={logo} alt="Antojitos Logo" />
+      </div>
 
-          <div className="flex-1">
-            {/* Este espacio rellena contenido a la derecha */}
-          </div>
-        </div>
-      </header>
-    </>
+      {/* Botones */}
+      <nav>
+        <ul className="flex gap-4 font-semibold text-black">
+          {botones.map((boton, index) => (
+            <BotonNavbar
+              key={index}
+              nombreBoton={boton.nombreBoton}
+              hrefBoton={boton.hrefBoton}
+            />
+          ))}
+        </ul>
+      </nav>
+    </header>
   );
 };
 
