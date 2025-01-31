@@ -1,11 +1,14 @@
 /* eslint-disable react/prop-types */
 
-const BotonNavbar = ({ nombreBoton, hrefBoton }) => {
+const BotonHeader = ({ hrefBoton, nombreBoton }) => {
   return (
-    <li className="flex h-full items-center px-3 transition-colors hover:bg-slate-100">
-      <a href={hrefBoton}>{nombreBoton}</a>
-    </li>
+    <a
+      href={hrefBoton}
+      className="block p-2 transition-all transform bg-white rounded bg-opacity-5 hover:bg-opacity-30 hover:bg-white hover:scale-105 active:scale-95"
+    >
+      {nombreBoton}
+    </a>
   );
 };
 
-export default BotonNavbar;
+export default BotonHeader;
