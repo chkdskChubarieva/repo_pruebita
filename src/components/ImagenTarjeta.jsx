@@ -30,7 +30,7 @@ const ImagenEnTarjeta = ({ images}) => {
           <img
             src={imageList[mainImageIndex]}
             alt="Imagen principal"
-            className="w-full max-h-72 sm:max-h-100 object-contain border border-black rounded-lg"
+            className="w-full max-h-96 sm:max-h-100 object-contain border border-black rounded-lg"
           />
         </div>
       </div>

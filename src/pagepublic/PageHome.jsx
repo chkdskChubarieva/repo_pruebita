@@ -36,12 +36,9 @@ export default function PageHome() {
         <section id="caracteristicas" className="bg-white px-6 py-10 sm:px-12">
           <Caracteristicas />
         </section>
-        <section className="relative bg-black bg-opacity-50 py-10">
-          
+        <div className="bg-white flex justify-center ">
            <FourLokoCarousel/>
-
-          
-        </section>
+        </div>
 
         <Footer />
       </main>

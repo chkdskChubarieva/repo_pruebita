@@ -18,10 +18,12 @@ const Caracteristicas = () => {
       <p className="mt-2">Un mix único de gomitas y Four Loko para una explosión de sabor y energía.</p>
       <br />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <ImagenEnTarjeta
           images={images}
         />
+        <div className="mt-4">
+
         <ProductoEnTarjeta
           titulo="Gomitas de Four Loko - 3.5% Vol."
           descripcion="Bebida alcohólica gelificada con distintos sabores de Four Loko."
@@ -29,6 +31,7 @@ const Caracteristicas = () => {
           advertencia="Tomar bebidas alcohólicas en exceso es dañino para la salud."
           buttonText="COMPRA AHORA"
         />
+        </div>
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tarjeta = ({ children, className }) => {
   return (
-    <div className={`bg-white rounded-lg shadow-md p-4 ${className}`}>
+    <div className={`bg-white rounded-lg shadow-md p-8 ${className}`}>
       {children}
     </div>
   );

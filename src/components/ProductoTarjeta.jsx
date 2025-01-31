@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const ProductoEnTarjeta = ({ titulo, descripcion, tamanios, advertencia, buttonText }) => {
   return (
-    <Tarjeta className="bg-slate-800 text-black-200">
+    <Tarjeta className="rounded-lg shadow-md text-black-200">
       <h2 className="text-2xl font-bold">{titulo}</h2>
       <p className="mt-4">{descripcion}</p>
       <ul className="mt-4 list-disc list-inside">

@@ -55,7 +55,7 @@ const FourLokoCarousel = () => {
         {flavors.map((flavor, index) => (
           <div key={index} className="px-2">
             <div
-              className={`p-4 rounded-lg shadow-md flex flex-col items-center ${flavor.color}`}
+              className={`p-4 rounded-lg shadow-md flex flex-col items-center ${getGradientClass(flavor.color)}`}
             >
               <img
                 src={flavor.image}
@@ -70,6 +70,30 @@ const FourLokoCarousel = () => {
     </div>
   );
 };
+
+const getGradientClass = (color) => {
+  // Function to map flavor colors to gradient classes
+  switch (color) {
+    case "bg-blue-200":
+      return "bg-gradient-to-br from-blue-200 to-cyan-500";
+    case "bg-red-200":
+      return "bg-gradient-to-br from-red-200 to-pink-500";
+    case "bg-green-200":
+      return "bg-gradient-to-br from-green-200 to-emerald-500";
+    case "bg-yellow-200":
+        return "bg-gradient-to-br from-yellow-200 to-amber-500";
+    case "bg-violet-600":
+        return "bg-gradient-to-br from-violet-600 to-purple-500";
+    case "bg-pink-300":
+        return "bg-gradient-to-br from-pink-300 to-fuchsia-500";
+    case "bg-red-300":
+        return "bg-gradient-to-br from-red-300 to-orange-500";
+    default:
+      return "bg-gray-200"; // Default gradient if color not matched
+  }
+};
+
+
 
 const NextArrow = ({ sliderRef }) => {
   return (
