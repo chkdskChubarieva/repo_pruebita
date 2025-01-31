@@ -1,19 +1,10 @@
-const Tarjeta = ({ titulo, descripcion, icono }) => {
-  return (
-    <>
-      <article className="flex gap-3 rounded-md bg-slate-800 px-5 py-3 shadow">
-        <div className="my-auto w-16 min-w-16">
-          <img className="w-16" src={icono} alt="icono" />
-        </div>
+import React from 'react';
 
-        <div className="flex-grow space-y-2 text-slate-200">
-          <span className="text-balance text-lg font-semibold leading-tight">
-            {titulo}
-          </span>
-          <p className="text-pretty leading-tight">{descripcion}</p>
-        </div>
-      </article>
-    </>
+const Tarjeta = ({ children, className }) => {
+  return (
+    <div className={`bg-white rounded-lg shadow-md p-8 ${className}`}>
+      {children}
+    </div>
   );
 };
 
