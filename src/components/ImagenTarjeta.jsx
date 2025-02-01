@@ -37,5 +37,4 @@ const ImagenEnTarjeta = ({ images}) => {
     </Tarjeta>
   );
 };
-
 export default ImagenEnTarjeta;

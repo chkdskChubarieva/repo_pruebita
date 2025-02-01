@@ -11,9 +11,6 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Caracteristicas from "../components/caracteristicas";
 import FourLokoCarousel from "../components/carruselFourloko";
-import Carousel from "../components/Carrusel";
-
-
 
 
 export default function PageHome() {
@@ -38,17 +35,16 @@ export default function PageHome() {
 
         <section id="caracteristicas" className="bg-white px-6 py-10 sm:px-12">
           <Caracteristicas />
+          <div className="bg-white flex justify-center ">
+            <FourLokoCarousel/>
+          </div>
         </section>
-        <div className="bg-white flex justify-center ">
-           <FourLokoCarousel/>
-        </div>
-
-        <Footer />
-
-      </main>
+        
       <div id="contacto">
         <Footer />
-        </div>
+      </div>
+
+      </main>
     </>
   );
 }
