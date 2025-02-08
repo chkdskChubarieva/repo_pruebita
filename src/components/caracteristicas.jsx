@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import ProductoEnTarjeta from './ProductoTarjeta';
 import ImagenEnTarjeta from './ImagenTarjeta';
 import logoGomilokos from "/src/assets/img/LogoGomilokos.png";
