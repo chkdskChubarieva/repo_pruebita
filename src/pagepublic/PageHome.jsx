@@ -1,17 +1,8 @@
-import archivos from "../assets/icons/archivos.png";
-import diploma from "../assets/icons/diploma.png";
-import equipo from "../assets/icons/equipo.png";
-import estudiantes from "../assets/icons/estudiantes.png";
-import examen from "../assets/icons/examen.png";
-import prueba from "../assets/icons/prueba.png";
 import "../app.css";
-import Tarjeta from "../components/ImagenTarjeta";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import Caracteristicas from "../components/caracteristicas";
 import FourLokoCarousel from "../components/carruselFourloko";
-
 
 export default function PageHome() {
   const botonesNavbar = [

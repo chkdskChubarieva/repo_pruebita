@@ -2,28 +2,27 @@ import React, { useState } from 'react';
 import ProductoEnTarjeta from './ProductoTarjeta';
 import ImagenEnTarjeta from './ImagenTarjeta';
 import logoGomilokos from "/src/assets/img/LogoGomilokos.png";
+import green from "/src/assets/img/green.jpg";
+import black from "/src/assets/img/black.jpg";
+import summer from "/src/assets/img/summer.jpg";
+import gold from "/src/assets/img/gold.jpg";
 
 const Caracteristicas = () => {
   
-  const images = [
-    "/src/assets/img/green.jpg",
-    "/src/assets/img/black.jpg",
-    "/src/assets/img/summer.jpg",
-    "/src/assets/img/gold.jpg",
-  ];
+  const images = [green, black, summer, gold];
 
   return (
-    <section id="caracteristicas" className="bg-white px-6 py-10 sm:px-12">
+    <section id="caracteristicas" className="px-6 py-10 bg-white sm:px-12">
       <img
         src={logoGomilokos}
         alt="Gomilokos"
-        className="mb-10 mx-auto h-40 sm:h-44 md:h-48 lg:h-56 object-contain"
+        className="object-contain h-40 mx-auto mb-10 sm:h-44 md:h-48 lg:h-56"
       />
 
       <p className="mt-2">Un mix único de gomitas y Four Loko para una explosión de sabor y energía.</p>
       <br />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <ImagenEnTarjeta
           images={images}
         />
