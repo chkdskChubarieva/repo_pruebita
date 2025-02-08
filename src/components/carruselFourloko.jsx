@@ -13,6 +13,35 @@ const flavors = [
   { name: "SABOR PONCHE DE FRUTAS", image: "/sabores/frutas.png", color: "bg-red-300" },
 ];
 
+const getGradientClass = (color) => {
+  const gradients = {
+    "bg-blue-200": "bg-gradient-to-br from-blue-200 to-cyan-500",
+    "bg-red-200": "bg-gradient-to-br from-red-200 to-pink-500",
+    "bg-green-200": "bg-gradient-to-br from-green-200 to-emerald-500",
+    "bg-yellow-200": "bg-gradient-to-br from-yellow-200 to-amber-500",
+    "bg-violet-600": "bg-gradient-to-br from-violet-600 to-purple-500",
+    "bg-pink-300": "bg-gradient-to-br from-pink-300 to-fuchsia-500",
+    "bg-red-300": "bg-gradient-to-br from-red-300 to-orange-500",
+  };
+  return gradients[color] || "bg-gray-200";
+};
+
+const NextArrow = ({ onClick }) => (
+  <div className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer text-2xl z-10" onClick={onClick} aria-label="Next">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+    </svg>
+  </div>
+);
+
+const PrevArrow = ({ onClick }) => (
+  <div className="absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer text-2xl z-10" onClick={onClick} aria-label="Previous">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+    </svg>
+  </div>
+);
+
 const FourLokoCarousel = () => {
   const sliderRef = useRef(null);
 
@@ -47,34 +76,5 @@ const FourLokoCarousel = () => {
     </div>
   );
 };
-
-const getGradientClass = (color) => {
-  const gradients = {
-    "bg-blue-200": "bg-gradient-to-br from-blue-200 to-cyan-500",
-    "bg-red-200": "bg-gradient-to-br from-red-200 to-pink-500",
-    "bg-green-200": "bg-gradient-to-br from-green-200 to-emerald-500",
-    "bg-yellow-200": "bg-gradient-to-br from-yellow-200 to-amber-500",
-    "bg-violet-600": "bg-gradient-to-br from-violet-600 to-purple-500",
-    "bg-pink-300": "bg-gradient-to-br from-pink-300 to-fuchsia-500",
-    "bg-red-300": "bg-gradient-to-br from-red-300 to-orange-500",
-  };
-  return gradients[color] || "bg-gray-200";
-};
-
-const NextArrow = ({ onClick }) => (
-  <div className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer text-2xl z-10" onClick={onClick}>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-    </svg>
-  </div>
-);
-
-const PrevArrow = ({ onClick }) => (
-  <div className="absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer text-2xl z-10" onClick={onClick}>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-    </svg>
-  </div>
-);
 
 export default FourLokoCarousel;
