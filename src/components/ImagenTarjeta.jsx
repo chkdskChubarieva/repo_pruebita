@@ -21,7 +21,7 @@ const ImagenEnTarjeta = ({ images}) => {
               key={index}
               src={img}
               alt={`Foto ${index + 1}`}
-              className="w-20 h-20 border border-black rounded-lg cursor-pointer hover:opacity-75"
+              className="w-40 h-40 border border-black rounded-lg cursor-pointer hover:opacity-75"
               onClick={() => handleImageClick(index)}
             />
           ))}

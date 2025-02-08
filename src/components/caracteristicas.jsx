@@ -1,20 +1,25 @@
 import React, { useState } from 'react';
 import ProductoEnTarjeta from './ProductoTarjeta';
 import ImagenEnTarjeta from './ImagenTarjeta';
-
+import logoGomilokos from "/src/assets/img/LogoGomilokos.png";
 
 const Caracteristicas = () => {
   
   const images = [
-    "/src/assets/img/presentación pequeña.png",
-    "/src/assets/img/presentación grande.png",
-    "/src/assets/img/presentación grande.png",
-    "/src/assets/img/presentación grande.png",
+    "/src/assets/img/green.jpg",
+    "/src/assets/img/black.jpg",
+    "/src/assets/img/summer.jpg",
+    "/src/assets/img/gold.jpg",
   ];
 
   return (
     <section id="caracteristicas" className="bg-white px-6 py-10 sm:px-12">
-      <h1 className="mb-4 text-left text-5xl font-bold text-black">GOMILOKOS</h1>
+      <img
+        src={logoGomilokos}
+        alt="Gomilokos"
+        className="mb-10 mx-auto h-40 sm:h-44 md:h-48 lg:h-56 object-contain"
+      />
+
       <p className="mt-2">Un mix único de gomitas y Four Loko para una explosión de sabor y energía.</p>
       <br />
 

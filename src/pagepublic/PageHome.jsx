@@ -23,7 +23,7 @@ export default function PageHome() {
   return (
     <>
       <Header botones={botonesNavbar} />
-      <main id="home" className="relative top-20 -z-10 background w-full">
+      <main id="home" className="relative top-20 background w-full">
         <section className="bg-black bg-opacity-20">
           <h1 className="px-6 py-12 text-4xl font-semibold leading-tight text-white sm:px-12 sm:py-32 sm:text-5xl md:w-1/2 md:text-6xl font-inter font-light">
             GOMILOKOS
@@ -35,9 +35,10 @@ export default function PageHome() {
 
         <section id="caracteristicas" className="bg-white px-6 py-10 sm:px-12">
           <Caracteristicas />
-          <div className="bg-white flex justify-center ">
-            <FourLokoCarousel/>
+          <div className="bg-white flex justify-center md:w-3/4 md:mx-auto">
+            <FourLokoCarousel />
           </div>
+
         </section>
         
       <div id="contacto">
