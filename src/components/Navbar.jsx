@@ -3,8 +3,8 @@ import BotonNavbar from "./BotonNavbar";
 
 const Navbar = ({ botones = [] }) => {
   return (
-    <div className="fila-2 fixed top-20 z-10 flex h-12 w-full items-center justify-center bg-slate-50">
-      <ul className="text-md flex h-full items-center gap-2 font-semibold text-slate-500 sm:gap-4">
+    <div className="fixed z-10 flex items-center justify-center w-full h-12 fila-2 top-20 bg-slate-50">
+      <ul className="flex items-center h-full gap-2 font-semibold text-md text-slate-500 sm:gap-4">
         {botones.map((boton, index) => (
           <BotonNavbar
             key={index}
