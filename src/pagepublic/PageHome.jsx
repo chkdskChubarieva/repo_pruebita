@@ -18,7 +18,7 @@ export default function PageHome() {
         {/* Sección de inicio */}
         <section className="bg-black bg-opacity-20">
           <h1 className="px-6 py-8 text-3xl font-light leading-tight text-white sm:px-12 sm:py-16 sm:text-4xl md:text-5xl lg:text-6xl font-inter">
-            JUAN XDXDXD
+            SER GAI = Christian :3
           </h1>
           <div className="justify-end hidden px-6 pb-8 md:flex sm:pb-16">
             <h3 className="text-slate-200">El sabor de la lokura</h3>
